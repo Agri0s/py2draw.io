@@ -1,10 +1,12 @@
 [ ] Add mermaid output
-[ ] Handle the inherit type from parent
-[ ] Private or public variables (+ & -)
-[ ] Do not handle a direct alocation of a variables from init. For exemple here , the Type of employee_id and salary is Name
+[ ] Handle the inherited type from the parent
+[ ] Distinguish between private (-) and public (+) variables
+[ ] Do not handle the direct allocation of variables from __init__. For example, here the type of employee_id and salary is Name.
 
 class Employee(Person):
     def __init__(self, name: str, age: int, employee_id: int, salary: float):
         super().__init__(name, age)
         self.employee_id = employee_id
         self.salary = salary
+
+[ ] Max size calculator for methods doesn't work. Check if the string is well formatted before measuring.
